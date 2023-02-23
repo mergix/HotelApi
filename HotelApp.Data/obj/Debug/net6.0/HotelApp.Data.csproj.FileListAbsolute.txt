@@ -1,0 +1,17 @@
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/bin/Debug/net6.0/HotelApp.Data.deps.json
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/bin/Debug/net6.0/HotelApp.Data.dll
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/bin/Debug/net6.0/ref/HotelApp.Data.dll
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/bin/Debug/net6.0/HotelApp.Data.pdb
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/bin/Debug/net6.0/Hotel.DatabaseContext.dll
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/bin/Debug/net6.0/HotelApp.Models.dll
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/bin/Debug/net6.0/Hotel.DatabaseContext.pdb
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/bin/Debug/net6.0/HotelApp.Models.pdb
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/obj/Debug/net6.0/HotelApp.Data.csproj.AssemblyReference.cache
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/obj/Debug/net6.0/HotelApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/obj/Debug/net6.0/HotelApp.Data.AssemblyInfoInputs.cache
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/obj/Debug/net6.0/HotelApp.Data.AssemblyInfo.cs
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/obj/Debug/net6.0/HotelApp.Data.csproj.CoreCompileInputs.cache
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/obj/Debug/net6.0/HotelApp.Data.csproj.CopyComplete
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/obj/Debug/net6.0/HotelApp.Data.dll
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/obj/Debug/net6.0/ref/HotelApp.Data.dll
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Data/obj/Debug/net6.0/HotelApp.Data.pdb

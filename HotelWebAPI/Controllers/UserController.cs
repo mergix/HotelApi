@@ -1,5 +1,6 @@
 using Hotel.Services;
 using HotelApp.Models;
+using HotelApp.Models.RequestModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HotelWebAPI.Controllers;
@@ -28,17 +29,16 @@ public class UserController : ControllerBase
     }
     
     [HttpPost("/Login")]
-    public async Task<ActionResult<User>> LoginUser([FromBody] User user)
+    public async Task<ActionResult<User>> LoginUser([FromBody] LoginRequestModel user)
     {
-        
         return await _dataService.Login(user);
     }
     [HttpPost]
-    public async Task<ActionResult<User>> PostUser([FromBody] User user)
+    public async Task<ActionResult> PostUser([FromBody] RegisterUserRequestModel user)
     {
         var newUser = await _dataService.CreateUser(user);
         // return Ok(CreatedAtAction(nameof(GetUsers), new { id = newUser.UserId }, newUser));
-        return newUser;
+        return Ok(newUser);
     }
 
     [HttpPut]

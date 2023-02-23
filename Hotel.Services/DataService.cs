@@ -1,19 +1,22 @@
 
 using Hotel.DatabaseContext;
+using HotelApp.Data.Repositories;
 using HotelApp.Models;
+using HotelApp.Models.RequestModels;
+using HotelApp.Models.ViewModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace Hotel.Services;
 
 public class DataService : IDataService
 {
-    
     private readonly ApplicationDbContext _db;
+    private readonly IUserRepository _userRepository;
     
-    public DataService(ApplicationDbContext context) 
+    public DataService(ApplicationDbContext context, IUserRepository userRepository) 
     { 
-        _db = context; 
-        
+        _db = context;
+        _userRepository = userRepository;
     }
     
     public async Task<IEnumerable<Room>> GetRoomList()
@@ -46,17 +49,15 @@ public class DataService : IDataService
         return await _db.User.FindAsync(id);
     }
     
-    public async Task<User> Login(User user)
+    public async Task<User> Login(LoginRequestModel user)
     {
-        var check =  _db.User.FirstOrDefault(m => m.UserEmail == user.UserEmail && m.UserPassword == user.UserPassword);
+        var existingUser =  _db.User.FirstOrDefault(m => m.UserEmail == user.Username && m.UserPassword == user.Password);
 
-        if (check != null)
+        if (existingUser == null)
         {
-            user = check;
+            return null;
         }
-        
-
-        return  user ;
+        return existingUser;
     }
 
     public async Task<Room> CreateRoom(Room room)
@@ -88,20 +89,32 @@ public class DataService : IDataService
         return booking;
     }
 
-    public async Task<User> CreateUser(User user)
+    public async Task<UserViewModel> CreateUser(RegisterUserRequestModel model)
     {
-        var check = _db.User.FirstOrDefault(m => m.UserEmail == user.UserEmail && m.UserPassword == user.UserPassword);
+        var existingUser = _userRepository.GetByEmail(model.UserEmail);
 
-        if (check == null)
+        var newUser = new User
         {
-            _db.User.Add(user);
-            await _db.SaveChangesAsync();
-        }
-        else
-            user = check;
-
+            // UserId = Guid.NewGuid(),
+            UserId = 1,
+            UserEmail = model.UserEmail,
+            UserPassword = model.UserPassword
+        };
         
-            return user;
+        if (existingUser != null)
+        {
+            return null;
+        }
+        
+        _userRepository.Add(newUser); 
+
+        var viewModel = new UserViewModel()
+        {
+            UserId = newUser.UserId,
+            UserEmail = newUser.UserEmail
+        };
+
+        return viewModel;
     }
 
     public async Task UpdateRoom(Room room)
