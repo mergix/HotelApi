@@ -1,0 +1,14 @@
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/bin/Debug/net6.0/HotelApp.Models.deps.json
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/bin/Debug/net6.0/HotelApp.Models.runtimeconfig.json
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/bin/Debug/net6.0/HotelApp.Models.dll
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/bin/Debug/net6.0/HotelApp.Models.pdb
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.csproj.AssemblyReference.cache
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.AssemblyInfoInputs.cache
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.AssemblyInfo.cs
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.csproj.CoreCompileInputs.cache
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.dll
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/obj/Debug/net6.0/refint/HotelApp.Models.dll
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.pdb
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.genruntimeconfig.cache
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/obj/Debug/net6.0/ref/HotelApp.Models.dll

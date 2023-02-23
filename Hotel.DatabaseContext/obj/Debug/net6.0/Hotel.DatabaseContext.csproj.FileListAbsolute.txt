@@ -1,0 +1,17 @@
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/bin/Debug/net6.0/Hotel.DatabaseContext.deps.json
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/bin/Debug/net6.0/Hotel.DatabaseContext.runtimeconfig.json
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/bin/Debug/net6.0/Hotel.DatabaseContext.dll
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/bin/Debug/net6.0/Hotel.DatabaseContext.pdb
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/bin/Debug/net6.0/HotelApp.Models.dll
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/bin/Debug/net6.0/HotelApp.Models.pdb
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/obj/Debug/net6.0/Hotel.DatabaseContext.csproj.AssemblyReference.cache
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/obj/Debug/net6.0/Hotel.DatabaseContext.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/obj/Debug/net6.0/Hotel.DatabaseContext.AssemblyInfoInputs.cache
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/obj/Debug/net6.0/Hotel.DatabaseContext.AssemblyInfo.cs
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/obj/Debug/net6.0/Hotel.DatabaseContext.csproj.CoreCompileInputs.cache
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/obj/Debug/net6.0/Hotel.DatabaseContext.csproj.CopyComplete
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/obj/Debug/net6.0/Hotel.DatabaseContext.dll
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/obj/Debug/net6.0/refint/Hotel.DatabaseContext.dll
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/obj/Debug/net6.0/Hotel.DatabaseContext.pdb
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/obj/Debug/net6.0/Hotel.DatabaseContext.genruntimeconfig.cache
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/obj/Debug/net6.0/ref/Hotel.DatabaseContext.dll

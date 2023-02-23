@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelWebAPI", "HotelWebAPI\HotelWebAPI.csproj", "{DC299264-18F7-467C-A1B4-B72B0A7427CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelApp.Models", "HotelApp.Models\HotelApp.Models.csproj", "{7AFFC5DB-244C-400B-8135-50A019688D31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Services", "Hotel.Services\Hotel.Services.csproj", "{641F85FD-0CAA-41F2-B06F-CF13D1F54ADA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.DatabaseContext", "Hotel.DatabaseContext\Hotel.DatabaseContext.csproj", "{4D127D7A-F5CF-48E0-8562-71F5781A091A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC299264-18F7-467C-A1B4-B72B0A7427CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC299264-18F7-467C-A1B4-B72B0A7427CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC299264-18F7-467C-A1B4-B72B0A7427CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC299264-18F7-467C-A1B4-B72B0A7427CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AFFC5DB-244C-400B-8135-50A019688D31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AFFC5DB-244C-400B-8135-50A019688D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AFFC5DB-244C-400B-8135-50A019688D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AFFC5DB-244C-400B-8135-50A019688D31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{641F85FD-0CAA-41F2-B06F-CF13D1F54ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{641F85FD-0CAA-41F2-B06F-CF13D1F54ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{641F85FD-0CAA-41F2-B06F-CF13D1F54ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{641F85FD-0CAA-41F2-B06F-CF13D1F54ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D127D7A-F5CF-48E0-8562-71F5781A091A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D127D7A-F5CF-48E0-8562-71F5781A091A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D127D7A-F5CF-48E0-8562-71F5781A091A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D127D7A-F5CF-48E0-8562-71F5781A091A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
