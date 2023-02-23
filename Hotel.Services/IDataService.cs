@@ -1,4 +1,6 @@
 using HotelApp.Models;
+using HotelApp.Models.RequestModels;
+using HotelApp.Models.ViewModels;
 
 namespace Hotel.Services;
 
@@ -16,13 +18,13 @@ public interface IDataService
     
     Task<User> GetUser(int id);
     
-    Task<User> Login(User user);
+    Task<User> Login(LoginRequestModel user);
 
     Task<Room> CreateRoom(Room room);
     
     Task<Booking> CreateBooking(Booking booking);
     
-    Task<User> CreateUser(User user);
+    Task<UserViewModel> CreateUser(RegisterUserRequestModel user);
 
     Task UpdateRoom(Room room);
     

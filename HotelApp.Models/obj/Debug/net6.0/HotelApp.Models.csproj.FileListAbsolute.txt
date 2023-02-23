@@ -12,3 +12,17 @@
 /Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.pdb
 /Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.genruntimeconfig.cache
 /Users/mergixf/RiderProjects/HotelWebAPI/HotelApp.Models/obj/Debug/net6.0/ref/HotelApp.Models.dll
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Models/bin/Debug/net6.0/HotelApp.Models.deps.json
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Models/bin/Debug/net6.0/HotelApp.Models.runtimeconfig.json
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Models/bin/Debug/net6.0/HotelApp.Models.dll
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Models/bin/Debug/net6.0/ref/HotelApp.Models.dll
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Models/bin/Debug/net6.0/HotelApp.Models.pdb
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.csproj.AssemblyReference.cache
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.AssemblyInfoInputs.cache
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.AssemblyInfo.cs
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.csproj.CoreCompileInputs.cache
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.dll
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Models/obj/Debug/net6.0/ref/HotelApp.Models.dll
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.pdb
+/Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelApp.Models/obj/Debug/net6.0/HotelApp.Models.genruntimeconfig.cache

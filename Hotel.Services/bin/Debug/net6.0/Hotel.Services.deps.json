@@ -11,6 +11,7 @@
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "Hotel.DatabaseContext": "1.0.0",
+          "HotelApp.Data": "1.0.0",
           "HotelApp.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.2",
           "Microsoft.EntityFrameworkCore.Design": "7.0.2",
@@ -310,6 +311,16 @@
           "Hotel.DatabaseContext.dll": {}
         }
       },
+      "HotelApp.Data/1.0.0": {
+        "dependencies": {
+          "Hotel.DatabaseContext": "1.0.0",
+          "HotelApp.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.2"
+        },
+        "runtime": {
+          "HotelApp.Data.dll": {}
+        }
+      },
       "HotelApp.Models/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
@@ -519,6 +530,11 @@
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
     "Hotel.DatabaseContext/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HotelApp.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
