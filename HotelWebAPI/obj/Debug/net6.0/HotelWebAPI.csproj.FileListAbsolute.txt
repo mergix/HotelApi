@@ -114,3 +114,5 @@
 /Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelWebAPI/obj/Debug/net6.0/HotelWebAPI.genruntimeconfig.cache
 /Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelWebAPI/bin/Debug/net6.0/HotelApp.Data.dll
 /Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/HotelWebAPI/bin/Debug/net6.0/HotelApp.Data.pdb
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelWebAPI/bin/Debug/net6.0/HotelApp.Data.dll
+/Users/mergixf/RiderProjects/HotelWebAPI/HotelWebAPI/bin/Debug/net6.0/HotelApp.Data.pdb

@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Hotel.DatabaseContext
-build_property.ProjectDir = /Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/Hotel.DatabaseContext/
+build_property.ProjectDir = /Users/mergixf/RiderProjects/HotelWebAPI/Hotel.DatabaseContext/

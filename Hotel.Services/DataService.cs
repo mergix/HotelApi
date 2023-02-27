@@ -65,7 +65,7 @@ public class DataService : IDataService
 
     
         
-        // _db.Booking.Where(p => p.Room.RoomId == room.RoomId)
+
         
         _db.Room.Add(room);
         await _db.SaveChangesAsync();
@@ -76,13 +76,7 @@ public class DataService : IDataService
     public async Task<Booking> CreateBooking(Booking booking)
     {
 
-        // Booking test = new Booking();
-        //
-        //
-        // test.Room.RoomId = booking.Room.RoomId;
-        // test.User.UserId = booking.User.UserId;
-        // test.DateIn= booking.DateIn;
-        // test.DateOut = booking.DateOut;
+
         _db.Booking.Add(booking);
         await _db.SaveChangesAsync();
 
@@ -96,7 +90,7 @@ public class DataService : IDataService
         var newUser = new User
         {
             // UserId = Guid.NewGuid(),
-            UserId = 1,
+            UserId = new Guid(),
             UserEmail = model.UserEmail,
             UserPassword = model.UserPassword
         };

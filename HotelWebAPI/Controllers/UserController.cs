@@ -9,58 +9,58 @@ namespace HotelWebAPI.Controllers;
 [ApiController]
 public class UserController : ControllerBase
 {
-    private readonly IDataService _dataService;
+    private readonly IUserService _userService;
 
-    public UserController(IDataService dataService)
+    public UserController(IUserService userService)
     {
-        _dataService = dataService;
+        _userService = userService;
     }
 
     [HttpGet]
     public async Task<IEnumerable<User>> GetUsersList()
     {
-        return await _dataService.GetUserList();
+        return await _userService.GetUserList();
     }
     
     [HttpGet("{id}")]
-    public async Task<ActionResult<User>> GetUsers(int id)
+    public async Task<ActionResult<User>> GetUsers(Guid id)
     {
-        return await _dataService.GetUser(id);
+        return await _userService.GetUserById(id);
     }
     
     [HttpPost("/Login")]
     public async Task<ActionResult<User>> LoginUser([FromBody] LoginRequestModel user)
     {
-        return await _dataService.Login(user);
+        return await _userService.Login(user);
     }
     [HttpPost]
     public async Task<ActionResult> PostUser([FromBody] RegisterUserRequestModel user)
     {
-        var newUser = await _dataService.CreateUser(user);
+        var newUser = await _userService.CreateUser(user);
         // return Ok(CreatedAtAction(nameof(GetUsers), new { id = newUser.UserId }, newUser));
         return Ok(newUser);
     }
 
     [HttpPut]
-    public async  Task<ActionResult> PutUser(int id, [FromBody] User user)
+    public async  Task<ActionResult> PutUser(Guid id, [FromBody] User user)
     {
         if (id != user.UserId)
         {
             return BadRequest();
         }
 
-        await _dataService.UpdateUser(user);
+         _userService.UpdateUser(user);
         return NoContent();
     }
 
     [HttpDelete("{id}")]
-    public async Task<ActionResult> deleteUser(int id)
+    public async Task<ActionResult> deleteUser(Guid id)
     {
-        var userToDelete = await _dataService.GetUser(id);
+        var userToDelete = await _userService.GetUserById(id);
         if (userToDelete == null)
             return NotFound();
 
-        await _dataService.DeleteRoom(userToDelete.UserId);
+         _userService.DeleteUser(userToDelete.UserId);
         return NoContent();
     }
     

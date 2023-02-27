@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
@@ -16,13 +15,13 @@ namespace Hotel.DatabaseContext.Migrations
                 name: "Room",
                 columns: table => new
                 {
-                    RoomId = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    RoomId = table.Column<Guid>(type: "uuid", nullable: false),
                     RoomName = table.Column<string>(type: "text", nullable: true),
                     RoomPicture = table.Column<string>(type: "text", nullable: false),
                     Cost = table.Column<decimal>(type: "numeric", nullable: false),
                     CategoryType = table.Column<int>(type: "integer", nullable: false),
-                    Status = table.Column<int>(type: "integer", nullable: false)
+                    Status = table.Column<int>(type: "integer", nullable: false),
+                    LastModified = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -33,10 +32,13 @@ namespace Hotel.DatabaseContext.Migrations
                 name: "User",
                 columns: table => new
                 {
-                    UserId = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
+                    FirstName = table.Column<string>(type: "text", nullable: false),
+                    LastName = table.Column<string>(type: "text", nullable: false),
                     UserEmail = table.Column<string>(type: "text", nullable: false),
-                    UserPassword = table.Column<string>(type: "text", nullable: false)
+                    UserPassword = table.Column<string>(type: "text", nullable: false),
+                    RoleType = table.Column<int>(type: "integer", nullable: false),
+                    LastModified = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -47,12 +49,12 @@ namespace Hotel.DatabaseContext.Migrations
                 name: "Booking",
                 columns: table => new
                 {
-                    BookingId = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    BookingId = table.Column<Guid>(type: "uuid", nullable: false),
                     DateIn = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     DateOut = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    RoomId = table.Column<int>(type: "integer", nullable: false),
-                    UserId = table.Column<int>(type: "integer", nullable: false)
+                    RoomId = table.Column<Guid>(type: "uuid", nullable: false),
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
+                    LastModified = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
                 constraints: table =>
                 {

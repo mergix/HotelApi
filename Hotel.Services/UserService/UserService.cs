@@ -1,6 +1,7 @@
 using Hotel.DatabaseContext;
 using HotelApp.Data.Repositories;
 using HotelApp.Models;
+using HotelApp.Models.Enums;
 using HotelApp.Models.RequestModels;
 using HotelApp.Models.ViewModels;
 using Microsoft.EntityFrameworkCore;
@@ -9,28 +10,28 @@ namespace Hotel.Services;
 
 public class UserService : IUserService
 {
-    private readonly ApplicationDbContext _db;
+   
     private readonly IUserRepository _userRepository;
     
-    public UserService(ApplicationDbContext context, IUserRepository userRepository) 
+    public UserService(IUserRepository userRepository) 
     { 
-        _db = context;
+       
         _userRepository = userRepository;
     }
     
     public async Task<IEnumerable<User>> GetUserList()
     {
-        return await _db.User.ToListAsync();
+        return  _userRepository.GetAll();
     }
 
-    public async Task<User> GetUser(int id)
+    public async Task<User> GetUserById(Guid id)
     {
-        return await _db.User.FindAsync(id);
+        return _userRepository.GetById(id);
     }
     
     public async Task<User> Login(LoginRequestModel user)
     {
-        var existingUser =  _db.User.FirstOrDefault(m => m.UserEmail == user.Username && m.UserPassword == user.Password);
+        var existingUser =  _userRepository.GetByEmail(user.Username);
 
         if (existingUser == null)
         {
@@ -46,9 +47,11 @@ public class UserService : IUserService
         var newUser = new User
         {
             // UserId = Guid.NewGuid(),
-            UserId = 1,
+            UserId = Guid.NewGuid(),
+            FirstName = model.FirstName,
+            LastName = model.LastName,
             UserEmail = model.UserEmail,
-            UserPassword = model.UserPassword
+            UserPassword = model.UserPassword,
         };
         
         if (existingUser != null)
@@ -67,17 +70,15 @@ public class UserService : IUserService
         return viewModel;
     }
 
-    public async Task UpdateUser(User user)
+    public void  UpdateUser(User user)
     {
-        _db.Entry(user).State = EntityState.Modified;
-
-        await _db.SaveChangesAsync();
+        _userRepository.Update(user);
     }
 
-    public async Task DeleteUser(int id)
+
+
+    public  void  DeleteUser(Guid id)
     {
-        var deleteUser = await   _db.User.FindAsync(id);
-        _db.User.Remove(deleteUser);
-        await _db.SaveChangesAsync();
+      _userRepository.Delete(id);
     }
 }

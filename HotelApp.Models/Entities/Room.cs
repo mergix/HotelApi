@@ -4,10 +4,10 @@ using System.Net.Mime;
 namespace HotelApp.Models;
 using System.ComponentModel.DataAnnotations;
 
-public class Room
+public class Room:Base_Entity
 {
     [Key]
-    public int RoomId { get; set; }
+    public Guid RoomId { get; set; }
    
     
     public string? RoomName { get; set; }

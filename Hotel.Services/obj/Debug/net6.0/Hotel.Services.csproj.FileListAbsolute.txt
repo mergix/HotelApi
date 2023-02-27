@@ -38,3 +38,5 @@
 /Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/Hotel.Services/obj/Debug/net6.0/Hotel.Services.genruntimeconfig.cache
 /Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/Hotel.Services/bin/Debug/net6.0/HotelApp.Data.dll
 /Users/oluwatobiadelaja/Code/Personal/DotNet/HotelApi/Hotel.Services/bin/Debug/net6.0/HotelApp.Data.pdb
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.Services/bin/Debug/net6.0/HotelApp.Data.dll
+/Users/mergixf/RiderProjects/HotelWebAPI/Hotel.Services/bin/Debug/net6.0/HotelApp.Data.pdb

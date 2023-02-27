@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Hotel.DatabaseContext.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230222110102_InitialCreate")]
+    [Migration("20230227115337_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -27,11 +27,9 @@ namespace Hotel.DatabaseContext.Migrations
 
             modelBuilder.Entity("HotelApp.Models.Booking", b =>
                 {
-                    b.Property<int>("BookingId")
+                    b.Property<Guid>("BookingId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("BookingId"));
+                        .HasColumnType("uuid");
 
                     b.Property<DateTime>("DateIn")
                         .HasColumnType("timestamp with time zone");
@@ -39,11 +37,14 @@ namespace Hotel.DatabaseContext.Migrations
                     b.Property<DateTime>("DateOut")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<int>("RoomId")
-                        .HasColumnType("integer");
+                    b.Property<DateTime>("LastModified")
+                        .HasColumnType("timestamp with time zone");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("integer");
+                    b.Property<Guid>("RoomId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
 
                     b.HasKey("BookingId");
 
@@ -56,17 +57,18 @@ namespace Hotel.DatabaseContext.Migrations
 
             modelBuilder.Entity("HotelApp.Models.Room", b =>
                 {
-                    b.Property<int>("RoomId")
+                    b.Property<Guid>("RoomId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("RoomId"));
+                        .HasColumnType("uuid");
 
                     b.Property<int>("CategoryType")
                         .HasColumnType("integer");
 
                     b.Property<decimal>("Cost")
                         .HasColumnType("numeric");
+
+                    b.Property<DateTime>("LastModified")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("RoomName")
                         .HasColumnType("text");
@@ -85,11 +87,23 @@ namespace Hotel.DatabaseContext.Migrations
 
             modelBuilder.Entity("HotelApp.Models.User", b =>
                 {
-                    b.Property<int>("UserId")
+                    b.Property<Guid>("UserId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("uuid");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("UserId"));
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("LastModified")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("RoleType")
+                        .HasColumnType("integer");
 
                     b.Property<string>("UserEmail")
                         .IsRequired()
