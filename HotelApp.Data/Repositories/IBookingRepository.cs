@@ -8,5 +8,6 @@ public interface IBookingRepository
     void Update(Booking book);
     IEnumerable<Booking> GetAll();
     Booking GetById(Guid id);
+    IEnumerable<Booking> GetByUserId(Guid id);
     void Delete(Guid id);
 }

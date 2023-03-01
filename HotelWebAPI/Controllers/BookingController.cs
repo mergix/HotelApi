@@ -23,21 +23,20 @@ public class BookingController : ControllerBase
     
     
     [HttpGet]
-    [ProducesResponseType(200,Type = typeof(IEnumerable<Booking>))]
-    public IActionResult  GetBookingList()
+    public  Task<IEnumerable<Booking>>  GetBookingList()
     {
-        var bookings = _mapper.Map<List<BookingDto>>(_bookingService.GetBookingList());
-        return Ok(bookings) ;
+        var bookings = _bookingService.GetBookingList();
+        return bookings ;
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<Booking>> GetBooking(Guid id)
+    public Task<IEnumerable<Booking>>  GetBooking(Guid id)
     {
-        return await _bookingService.GetBookingByUserId(id);
+        return  _bookingService.GetBookingListByUserId(id);
     }
 
-    [HttpPost]
-    public async Task<ActionResult<Booking>> PostBooking([FromQuery] Guid userid,[FromQuery] Guid roomid,[FromBody] BookingDto booking)
+    [HttpPost ("{userid}/{roomid}")]
+    public async Task<ActionResult<Booking>> PostBooking( Guid userid, Guid roomid,[FromBody] BookingDto booking)
     {
         var newBooking = await _bookingService.CreateBooking(userid,roomid,booking);
         return CreatedAtAction(nameof(GetBooking), new { id = newBooking.BookingId }, newBooking);

@@ -35,6 +35,12 @@ public class BookingRepository : IBookingRepository
         return bookingById ;
     }
 
+    public IEnumerable<Booking> GetByUserId(Guid id)
+    {
+        var bookingByuserId = _db.Booking.Where(b => b.User.UserId == id).ToList();
+        return bookingByuserId ;
+    }
+
     public void Delete(Guid id)
     {
         var deleteBooking =  _db.Booking.Find(id);

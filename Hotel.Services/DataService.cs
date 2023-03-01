@@ -51,7 +51,7 @@ public class DataService : IDataService
     
     public async Task<User> Login(LoginRequestModel user)
     {
-        var existingUser =  _db.User.FirstOrDefault(m => m.UserEmail == user.Username && m.UserPassword == user.Password);
+        var existingUser =  _db.User.FirstOrDefault(m => m.UserEmail == user.UserEmail && m.UserPassword == user.UserEmail);
 
         if (existingUser == null)
         {

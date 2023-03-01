@@ -31,7 +31,7 @@ public class UserService : IUserService
     
     public async Task<User> Login(LoginRequestModel user)
     {
-        var existingUser =  _userRepository.GetByEmail(user.Username);
+        var existingUser =  _userRepository.GetByEmail(user.UserEmail);
 
         if (existingUser == null)
         {
@@ -52,6 +52,7 @@ public class UserService : IUserService
             LastName = model.LastName,
             UserEmail = model.UserEmail,
             UserPassword = model.UserPassword,
+            LastModified = DateTime.UtcNow
         };
         
         if (existingUser != null)
